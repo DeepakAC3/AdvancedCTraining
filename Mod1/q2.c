@@ -1,15 +1,5 @@
 #include <stdio.h>
 
-// Function to shift elements to the right by 1 position using pointers
-void rightShift(int* start, int* end) {
-    int temp = *end;
-    while (end > start) {
-        *end = *(end - 1);
-        end--;
-    }
-    *start = temp;
-}
-
 // Main rearrangement function
 void rearrangeEvenOdd(int* arr, int size) {
     int* current = arr;
